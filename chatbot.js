@@ -27,8 +27,6 @@ inputForm.addEventListener('submit', function(event) {
 
   // Generate chatbot response
   const response = generateResponse(input);
-
-  
 });
 
 // Generate chatbot response function
@@ -49,5 +47,3 @@ async function generateResponse(input) {
   conversation.appendChild(message);
   message.scrollIntoView({behavior: "smooth"});
 }
-  
-  
