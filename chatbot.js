@@ -51,7 +51,7 @@ function generateResponse(input) {
       "I'm here to assist you with any questions or problems you may have. How can I help you today? 💡",
     ];
 
-    fetch('http://45.76.209.188:12580/chat?token=mingzhe666!&conversation_list=[{"role": "user", "content": "Hello! What is your name?"}]')
+    fetch('https://nlp-platform.online/whatsapp_bot/chat?token=mIngzhe666!&conversation_list=[{"role": "user", "content": "Hello!"}]')
 		.then((response) => response.json())
 		.then((json) => console.log(json));
     
