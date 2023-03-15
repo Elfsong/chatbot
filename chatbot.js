@@ -50,6 +50,10 @@ function generateResponse(input) {
       "Is there anything specific you'd like to ask or talk about? I'm here to help with any questions or concerns you may have. 💬",
       "I'm here to assist you with any questions or problems you may have. How can I help you today? 💡",
     ];
+
+    fetch('http://45.76.209.188:12580/chat?token=mingzhe666!&conversation_list=[{"role": "user", "content": "Hello! What is your name?"}]')
+		.then((response) => response.json())
+		.then((json) => console.log(json));
     
     // Return a random response
     return responses[Math.floor(Math.random() * responses.length)];
