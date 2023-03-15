@@ -17,7 +17,6 @@ inputForm.addEventListener('submit', function(event) {
 
   // Clear input field
   inputField.value = '';
-  message.scrollIntoView({behavior: "smooth"});
   const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit" });
 
   // Add user input to conversation
@@ -25,6 +24,7 @@ inputForm.addEventListener('submit', function(event) {
   message.classList.add('chatbot-message', 'user-message');
   message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${input}</p>`;
   conversation.appendChild(message);
+  message.scrollIntoView({behavior: "smooth"});
 
   // Generate chatbot response
   const response = generateResponse(input);
