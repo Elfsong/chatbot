@@ -17,6 +17,7 @@ inputForm.addEventListener('submit', function(event) {
 
   // Clear input field
   inputField.value = '';
+  message.scrollIntoView({behavior: "smooth"});
   const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit" });
 
   // Add user input to conversation
